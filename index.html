@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+
+    <!-- google font -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
+     -->
+    <!-- link external css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+<style>
+    body {
+    font-family: 'Source Serif Pro', serif;
+    color:#fff;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 20px;
+}
+
+
+.left img {
+    width: 100px;
+    filter: invert(100%);
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color:#555;
+
+}
+
+.btnCalltoAction{
+    margin: 0px 9px;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 14px;
+    border: 2px solid #cba;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnCalltoAction:hover{
+    background-color: #333;
+}
+
+
+.container {
+    border: 2px solid #fff;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.form-group {
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid #000;
+    margin: 11px auto;
+    font-size: 23px;
+    border-radius: 8px;
+}
+.btn {
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 3px;
+    border: 2px solid #cba;
+    margin: 11px auto;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- The navigation bar -->
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/gymlogo1.png" alt="">
+            <div>Stay Fit</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/fitness">Fitness Mantras</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btnCalltoAction">Call Us Now</button>
+            <button class="btnCalltoAction">Email Us</button>
+        </div>
+    </header>
+
+
+    <!-- The form -->
+    <div class="container">
+        <h1>Join the best gym of Kolkata now</h1>
+        <form action="/" method="POST">
+            <div>
+                <input type="text" name="client's Name" placeholder="Enter your Name" class="form-group">
+            </div>
+            <div>
+                <input type="number" name="client's Age" placeholder="Enter your Age" class="form-group">
+            </div>
+            
+            
+            <select name="client's Gender" id="" class="form-group">
+                <option value="male" selected="selected">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <div>
+                <input type="text" name="client's Address" placeholder="Enter your Locality" class="form-group">
+            </div>
+            
+            <select name="client's Batch" id="" class="form-group">
+                <option value="morningBatch" selected="selected">Morning batch</option>
+                <option value="eveningBatch">Evening Batch</option>
+            </select>
+            
+            <div>
+                <input type="email" name="client's Email" placeholder="Enter your Email Id" class="form-group">
+            </div>
+            
+            <div>
+                <input type="number" name="client's Number" placeholder="Enter your Phone Number" class="form-group">
+            </div>
+            
+            <div>
+                <input type="submit" value="Submit Now" class="btn">
+            </div>
+            
+            <div>
+                <input type="reset" value="Reset Now" class="btn">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
